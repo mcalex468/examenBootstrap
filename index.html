@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog de Tecnología</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- Logo -->
+            <img src="./Imagenes/logo.jpg" alt="Logo" width="100" height="100" class="d-inline-block align-text-top">
+            <a class="navbar-brand" href="#">TecnoBlog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#articulos">Artículos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-5" style="background-image: url('./Imagenes/fondo2.jpg');">
+        <div class="container">
+            <h1>Bienvenido al Blog de Tecnología</h1>
+            <a href="#articulos" class="btn btn-light mt-3">Ver Artículos</a>
+        </div>
+    </header>
+
+    <!-- Sección de artículos -->
+    <section id="articulos" class="container my-5">
+        <h2 class="text-center mb-4">Últimos Artículos</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./Imagenes/imgBlog1.jpg" class="card-img-top" style="height: 250px;" alt="articulo">
+                    <div class="card-body">
+                        <h5 class="card-title">Tendencias en IA</h5>
+                        <p class="card-text">Descubre cómo la inteligencia artificial está cambiando el mundo. <br>
+                            Investiga como puedes aprovechar estos avances.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                        <div class="mt-3">
+                            <label>Progreso de lectura</label>
+                            <div class="progress">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 30%;">30%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./Imagenes/imgBlog2.jpg" class="card-img-top" style="height: 250px;" alt="articulo">
+                    <div class="card-body">
+                        <h5 class="card-title">El Futuro del 5G</h5>
+                        <p class="card-text">¿Qué impacto tendrá el 5G en nuestra vida cotidiana?<br> ¿Nos espian con
+                            esta nueva actualización?</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                        <div class="mt-3">
+                            <label>Progreso de lectura</label>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 90%;">90%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./Imagenes/imgBlog3.jpg" class="card-img-top" style="height: 250px;" alt="articulo">
+                    <div class="card-body">
+                        <h5 class="card-title">Desarrollo Web</h5>
+                        <p class="card-text">Las últimas tendencias en el mundo del desarrollo web, junto a la
+                            ineligencia antificial.<br> ChatGpt vs DeepSeek</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                        <div class="mt-3">
+                            <label>Progreso de lectura</label>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 70%;">70%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Barra de progreso -->
+    <div class="container my-4 text-center">
+        <label>Progreso lectura Total</label>
+        <div class="progress">
+            <div class="progress-bar bg-secondary" role="progressbar" style="width: 60%;" aria-valuenow="50"
+                aria-valuemin="0" aria-valuemax="100">60%</div>
+        </div>
+    </div>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto" class="container my-5">
+        <h2 class="text-center">Contáctanos</h2>
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Nombre</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Mensaje</label>
+                <textarea class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Componente adicional - Modal -->
+    <div class="container text-center my-5">
+        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver
+            más</button>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Bienvenido a TecnoBlog</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Descubre las últimas novedades tecnológicas.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2025 TecnoBlog | Síguenos en <a href="" class="text-light">Instagram</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
